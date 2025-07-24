@@ -1,4 +1,4 @@
-module github.com/wongtsejian/gozilliqa-sdk/v3
+module github.com/wongtsejian/gozilliqa-sdk/v4
 
 require (
 	github.com/btcsuite/btcd v0.23.2

@@ -11,7 +11,6 @@ require (
 	github.com/stretchr/testify v1.8.1
 	github.com/tyler-smith/go-bip39 v1.1.0
 	github.com/ybbus/jsonrpc v2.1.2+incompatible
-	github.com/ybbus/jsonrpc/v3 v3.1.1
 	golang.org/x/crypto v0.4.0
 	golang.org/x/sync v0.1.0
 	google.golang.org/protobuf v1.26.0
@@ -26,4 +25,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-go 1.19
+go 1.22

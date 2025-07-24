@@ -114,12 +114,14 @@ type ScillaEventLog struct {
 }
 
 type TransactionReceipt struct {
-	// Accept        bool                   `json:"accept"`
-	// Errors        interface{}            `json:"errors"`
-	// Exceptions    []TransactionException `json:"exceptions"`
-	Success       bool   `json:"success"`
-	CumulativeGas string `json:"cumulative_gas"`
-	EpochNum      string `json:"epoch_num"`
+	Accept        bool                   `json:"accept"`
+	Errors        interface{}            `json:"errors"`
+	Exceptions    []TransactionException `json:"exceptions"`
+	Success       bool                   `json:"success"`
+	CumulativeGas string                 `json:"cumulative_gas"`
+	EpochNum      string                 `json:"epoch_num"`
+	EventLogs     []EventLog             `json:"event_logs"`
+	Transitions   []Transition           `json:"transitions"`
 }
 
 type TransactionException struct {

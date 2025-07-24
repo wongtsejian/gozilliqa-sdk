@@ -87,20 +87,23 @@ type ShardInfo struct {
 }
 
 type Transaction struct {
-	ID           string             `json:"ID"`
-	Version      string             `json:"version"`
-	Nonce        string             `json:"nonce"`
-	Amount       string             `json:"amount"`
-	GasPrice     string             `json:"gasPrice"`
-	GasLimit     string             `json:"gasLimit"`
-	Signature    string             `json:"signature"`
-	Receipt      TransactionReceipt `json:"receipt"`
-	SenderPubKey string             `json:"senderPubKey"`
-	ToAddr       string             `json:"toAddr"`
-	Code         string             `json:"code"`
-	Data         interface{}        `json:"data"`
-	EventLogs    []EventLog         `json:"event_logs"`
-	Transitions  []Transition       `json:"transitions"`
+	ID              string             `json:"ID"`
+	Version         string             `json:"version"`
+	Nonce           string             `json:"nonce"`
+	Amount          string             `json:"amount"`
+	GasPrice        string             `json:"gasPrice"`
+	GasLimit        string             `json:"gasLimit"`
+	Signature       string             `json:"signature"`
+	Receipt         TransactionReceipt `json:"receipt"`
+	SenderPubKey    string             `json:"senderPubKey"`
+	ToAddr          string             `json:"toAddr"`
+	Code            string             `json:"code"`
+	Data            interface{}        `json:"data"`
+	EventLogs       []EventLog         `json:"event_logs"`
+	Transitions     []Transition       `json:"transitions"`
+	Status          State              `json:"status"`
+	ContractAddress string             `json:"contractAddress"`
+	Priority        bool               `json:"priority"`
 }
 
 type EventLog struct {

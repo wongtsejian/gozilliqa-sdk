@@ -105,6 +105,10 @@ type Transaction struct {
 }
 
 type EventLog struct {
+	Scilla Scilla `json:"Scilla"`
+}
+
+type Scilla struct {
 	EventName string          `json:"_eventname"`
 	Address   string          `json:"address"`
 	Params    []ContractValue `json:"params"`

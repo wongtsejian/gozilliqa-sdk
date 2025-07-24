@@ -133,12 +133,12 @@ type TransactionException struct {
 }
 
 type Transition struct {
-	From   string          `json:"from"`
-	To     string          `json:"to"`
-	Depth  int             `json:"depth"`
-	Amount int             `json:"amount"`
-	Tag    string          `json:"tag"`
-	Params []ContractValue `json:"params"`
+	From   string `json:"from"`
+	To     string `json:"to"`
+	Depth  int    `json:"depth"`
+	Amount int    `json:"amount"`
+	Tag    string `json:"tag"`
+	Params string `json:"params"`
 }
 
 type Transactions struct {

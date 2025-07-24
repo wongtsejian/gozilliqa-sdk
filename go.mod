@@ -1,4 +1,4 @@
-module github.com/Zilliqa/gozilliqa-sdk/v3
+module github.com/wongtsejian/gozilliqa-sdk/v3
 
 require (
 	github.com/btcsuite/btcd v0.23.2

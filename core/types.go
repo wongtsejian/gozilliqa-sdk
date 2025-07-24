@@ -87,25 +87,24 @@ type ShardInfo struct {
 }
 
 type Transaction struct {
-	ID              string
-	Version         string
-	Nonce           string
-	Amount          string
-	GasPrice        string
-	GasLimit        string
-	Signature       string
-	Receipt         TransactionReceipt
-	SenderPubKey    string
-	ToAddr          string
-	Code            string
-	Data            interface{}
-	Status          State
-	ContractAddress string
-	Priority        bool
+	ID           string             `json:"ID"`
+	Version      string             `json:"version"`
+	Nonce        string             `json:"nonce"`
+	Amount       string             `json:"amount"`
+	GasPrice     string             `json:"gasPrice"`
+	GasLimit     string             `json:"gasLimit"`
+	Signature    string             `json:"signature"`
+	Receipt      TransactionReceipt `json:"receipt"`
+	SenderPubKey string             `json:"senderPubKey"`
+	ToAddr       string             `json:"toAddr"`
+	Code         string             `json:"code"`
+	Data         interface{}        `json:"data"`
+	EventLogs    []EventLog         `json:"event_logs"`
+	Transitions  []Transition       `json:"transitions"`
 }
 
 type EventLog struct {
-	Scilla []ScillaEventLog `json:"Scilla"`
+	Scilla ScillaEventLog `json:"Scilla"`
 }
 
 type ScillaEventLog struct {
@@ -115,14 +114,12 @@ type ScillaEventLog struct {
 }
 
 type TransactionReceipt struct {
-	Accept        bool                   `json:"accept"`
-	Errors        interface{}            `json:"errors"`
-	Exceptions    []TransactionException `json:"exceptions"`
-	Success       bool                   `json:"success"`
-	CumulativeGas string                 `json:"cumulative_gas"`
-	EpochNum      string                 `json:"epoch_num"`
-	EventLogs     []EventLog             `json:"event_logs"`
-	Transitions   []Transition           `json:"transitions"`
+	// Accept        bool                   `json:"accept"`
+	// Errors        interface{}            `json:"errors"`
+	// Exceptions    []TransactionException `json:"exceptions"`
+	Success       bool   `json:"success"`
+	CumulativeGas string `json:"cumulative_gas"`
+	EpochNum      string `json:"epoch_num"`
 }
 
 type TransactionException struct {
@@ -131,17 +128,12 @@ type TransactionException struct {
 }
 
 type Transition struct {
-	Accept bool               `json:"accept"`
-	Addr   string             `json:"addr"`
-	Depth  int                `json:"depth"`
-	Msg    TransactionMessage `json:"msg"`
-}
-
-type TransactionMessage struct {
-	Amount    string          `json:"_amount"`
-	Recipient string          `json:"_recipient"`
-	Tag       string          `json:"_tag"`
-	Params    []ContractValue `json:"params"`
+	From   string          `json:"from"`
+	To     string          `json:"to"`
+	Depth  int             `json:"depth"`
+	Amount int             `json:"amount"`
+	Tag    string          `json:"tag"`
+	Params []ContractValue `json:"params"`
 }
 
 type Transactions struct {

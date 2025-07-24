@@ -3,8 +3,8 @@ package prover
 import (
 	"testing"
 
-	"github.com/Zilliqa/gozilliqa-sdk/v3/core"
-	"github.com/Zilliqa/gozilliqa-sdk/v3/provider"
+	"github.com/wongtsejian/gozilliqa-sdk/v4/core"
+	"github.com/wongtsejian/gozilliqa-sdk/v4/provider"
 )
 
 func TestStateProver_VerifyStateProof(t *testing.T) {

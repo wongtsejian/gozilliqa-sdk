@@ -17,8 +17,8 @@
 package core
 
 import (
-	"github.com/Zilliqa/gozilliqa-sdk/v3/protobuf"
-	"github.com/Zilliqa/gozilliqa-sdk/v3/util"
+	"github.com/wongtsejian/gozilliqa-sdk/v4/protobuf"
+	"github.com/wongtsejian/gozilliqa-sdk/v4/util"
 	"github.com/golang/protobuf/proto"
 	"strconv"
 )

@@ -20,10 +20,10 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/Zilliqa/gozilliqa-sdk/v3/util"
+	"github.com/wongtsejian/gozilliqa-sdk/v4/util"
 	"math/big"
 
-	"github.com/Zilliqa/gozilliqa-sdk/v3/keytools"
+	"github.com/wongtsejian/gozilliqa-sdk/v4/keytools"
 	"github.com/btcsuite/btcd/btcec/v2"
 )
 

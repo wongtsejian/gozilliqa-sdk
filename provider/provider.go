@@ -24,7 +24,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/Zilliqa/gozilliqa-sdk/v3/core"
+	"github.com/wongtsejian/gozilliqa-sdk/v4/core"
 	"github.com/ybbus/jsonrpc"
 )
 

@@ -17,8 +17,8 @@
 package mpt
 
 import (
-	"github.com/Zilliqa/gozilliqa-sdk/v3/core"
-	"github.com/Zilliqa/gozilliqa-sdk/v3/util"
+	"github.com/wongtsejian/gozilliqa-sdk/v4/core"
+	"github.com/wongtsejian/gozilliqa-sdk/v4/util"
 	"strings"
 	"testing"
 )

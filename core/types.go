@@ -135,8 +135,8 @@ type TransactionException struct {
 type Transition struct {
 	From   string `json:"from"`
 	To     string `json:"to"`
-	Depth  int    `json:"depth"`
-	Amount int    `json:"amount"`
+	Depth  uint64 `json:"depth"`
+	Amount string `json:"amount"`
 	Tag    string `json:"tag"`
 	Params string `json:"params"`
 }

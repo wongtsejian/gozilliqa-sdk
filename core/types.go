@@ -136,7 +136,7 @@ type Transition struct {
 	From   string `json:"from"`
 	To     string `json:"to"`
 	Depth  uint64 `json:"depth"`
-	Amount string `json:"amount"`
+	Amount uint64 `json:"amount"`
 	Tag    string `json:"tag"`
 	Params string `json:"params"`
 }

@@ -16,6 +16,10 @@
  */
 package core
 
+import (
+	"encoding/json"
+)
+
 type State int
 
 const (
@@ -133,12 +137,12 @@ type TransactionException struct {
 }
 
 type Transition struct {
-	From   string `json:"from"`
-	To     string `json:"to"`
-	Depth  uint64 `json:"depth"`
-	Amount uint64 `json:"amount"`
-	Tag    string `json:"tag"`
-	Params string `json:"params"`
+	From   string          `json:"from"`
+	To     string          `json:"to"`
+	Depth  uint64          `json:"depth"`
+	Amount json.RawMessage `json:"amount"`
+	Tag    string          `json:"tag"`
+	Params string          `json:"params"`
 }
 
 type Transactions struct {
